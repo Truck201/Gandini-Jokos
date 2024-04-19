@@ -125,11 +125,99 @@ for (let i = 0; i < palab.length; i++) {
 }
 
 for (let letra in conteo) {
-    //console.log(letra,"=",conteo[letra])
+    // console.log(letra,"=",conteo[letra])
 }
 
 
 // Act 12
+let list = [
+    {Nombre: "Juan", Sexo:"Masculino", Edad: 27},
+    {Nombre: "Ester", Sexo:"Femenino", Edad: 97},
+    {Nombre: "Mengecho", Sexo: "Masculino", Edad: 34},
+    {Nombre: "Francisco", Sexo: "Masculino", Edad: 7},
+    {Nombre: "Marta", Sexo: "Femenino", Edad: 30},
+    {Nombre: "Ana", Sexo: "Femenino", Edad: 20}
+]
+
+acM  = []
+acF = []
+
+let min = Infinity // Hom
+let min2 = Infinity  // Fem
+
+let max = 0 // Hom
+let max2 = 0 // Fem
+
+let acE = 0
+
+let nMM = 0 // Nombre Masculino Mayor.
+let nMm = 0 // ""   ""  menor.
+let nFM = 0 // Nombre Femenino Mayor.
+let nFm = 0 // ""   ""  menor.
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i].Sexo === "Masculino") {
+        acM = list[i].Edad
+        acE = acE + list[i].Edad
+            if (list[i].Edad < min){
+                min = list[i].Edad
+            }
+            if (list[i].Edad > max) {
+                max = list[i].Edad
+            } 
+    } else {
+        if (list[i].Sexo === "Femenino") {
+            acF.push(list[i].Edad)
+            acE = acE + list[i].Edad
+            if (list[i].Edad < min2) {
+                min2 = list[i].Edad 
+            }
+            if (list[i].Edad > max2) {
+                max2 = list[i].Edad
+            } 
+        }
+    }
+}
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i].Edad === max2) {
+        nFM = list[i].Nombre
+    }
+}
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i].Edad === min2) {
+        nFm = list[i].Nombre
+    }
+}
+
+for (let i = 0; i < list.length; i++) {
+    if (list[i].Edad === max) {
+        nMM = list[i].Nombre
+    }
+}
+
+for (let i = 0; i < list.length; i++){
+    if (list[i].Edad === min) {
+        nMm = list[i].Nombre
+    }
+}
+
+let Prom = acE / list.length
+
+console.log("Promedio de la edad de todos en la lista es de " + Math.round(Prom) + " años." )
+
+console.log("Edad Mayor de las Hombres es de " + max + " años." + " Su nombre es " + nMM + "." )
+console.log("Edad menor de los Hombres es de " + min + " años." + " Su nombre es " + nMm + ".")
+
+console.log("Edad Mayor de las Mujeres es de " + max2 + " años." + " Su nombre es " + nFM + "." )
+console.log("Edad menor de los Mujeres es de " + min2 + " años." + " Su nombre es " + nFm + ".")
+
+
+
+
+
+
 
 
 
