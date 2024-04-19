@@ -5,7 +5,6 @@ let num2 = 10
 suma = num1 + num2
 //console.log(suma)
 
-
 // Act 2 
 let num3 = 15
 
@@ -33,12 +32,10 @@ if(num1<num2 & num1<num3) {
     }
 }
 
-
 // Act 3
 let dato = "PALABRA"
 // console.log(dato.length)
 // console.log("Palabra tiene " + (dato.length) + " " + "letras" )
-
 
 // Act 4
 let num5 = 2%2
@@ -48,13 +45,11 @@ if (num5 === 0) {
    // console.log("Es impar")
 }
 
-
 // Act 5
 const names = "Jeffrey"
 for (let i = 0; i < 6; i ++) {
    // console.log(i, names)
 }
-
 
 // Act 6
 let numb = 15
@@ -68,7 +63,6 @@ if (numb < numb2) {
       //  console.log(i)
     }
 }
-
 
 // Act 7
 let numb3 = 4
@@ -86,14 +80,12 @@ if (numb3 < numb4) {
     //}
 }
 
-
 // Act 8
 for (let i = 0; i < 100; i ++) {
     if (i % 2 === 0 & i % 5 === 0) {
     //    console.log(i)
     }
 }
-
 
 // Act 9
 let array = [12,15,10]
@@ -108,7 +100,6 @@ for (let i = 0; i < array2.length; i++) {
        // console.log(array2[i])
     }
 }
-
 
 // ACT 11 Very Hardinero
 const palab = "MAMBANEGRA"
@@ -128,7 +119,6 @@ for (let letra in conteo) {
     // console.log(letra,"=",conteo[letra])
 }
 
-
 // Act 12
 let list = [
     {Nombre: "Juan", Sexo:"Masculino", Edad: 27},
@@ -136,7 +126,8 @@ let list = [
     {Nombre: "Mengecho", Sexo: "Masculino", Edad: 34},
     {Nombre: "Francisco", Sexo: "Masculino", Edad: 7},
     {Nombre: "Marta", Sexo: "Femenino", Edad: 30},
-    {Nombre: "Ana", Sexo: "Femenino", Edad: 20}
+    {Nombre: "Ana", Sexo: "Femenino", Edad: 20},
+    {Nombre: "Tarzan", Sexo: "Masculino", Edad: 54}
 ]
 
 acM  = []
@@ -205,13 +196,13 @@ for (let i = 0; i < list.length; i++){
 
 let Prom = acE / list.length
 
-console.log("Promedio de la edad de todos en la lista es de " + Math.round(Prom) + " años." )
+//console.log("Promedio de la edad de todos en la lista es de " + Math.round(Prom) + " años." )
 
-console.log("Edad Mayor de las Hombres es de " + max + " años." + " Su nombre es " + nMM + "." )
-console.log("Edad menor de los Hombres es de " + min + " años." + " Su nombre es " + nMm + ".")
+//console.log("Edad Mayor de las Hombres es de " + max + " años." + " Su nombre es " + nMM + "." )
+//console.log("Edad menor de los Hombres es de " + min + " años." + " Su nombre es " + nMm + ".")
 
-console.log("Edad Mayor de las Mujeres es de " + max2 + " años." + " Su nombre es " + nFM + "." )
-console.log("Edad menor de los Mujeres es de " + min2 + " años." + " Su nombre es " + nFm + ".")
+//console.log("Edad Mayor de las Mujeres es de " + max2 + " años." + " Su nombre es " + nFM + "." )
+//console.log("Edad menor de los Mujeres es de " + min2 + " años." + " Su nombre es " + nFm + ".")
 
 
 
